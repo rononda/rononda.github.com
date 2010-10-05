@@ -1,0 +1,25 @@
+!!! 5
+%html
+  %head
+    %title Ron Onda | Accordionist
+    = stylesheets
+  %body
+    #container
+      #header
+        %h2 <a href="/" title="Home">Ron Onda - Accordionist</a>
+        #images
+          %img{:src => "/images/ron1_145.jpg", :alt => "Ron playing the accordion"}
+          %img{:src => "/images/flowers_145.jpg", :alt => "Flowers"}
+          %img{:src => "/images/ron2_145.jpg", :alt => "Ron playing the accordion 2"}
+          %img{:src => "/images/accordion1_145.jpg", :alt => "Accordion close-up"}
+
+      #sidebar
+        = partial('sidebar')
+
+      #content
+        = yield
+
+      #layout_footer
+
+    #footer
+      &copy; 2010 Ron Onda

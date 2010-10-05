@@ -1,0 +1,5 @@
+# robots.txt for rononda.com
+
+User-Agent: *
+Disallow: /config
+Disallow: /src
