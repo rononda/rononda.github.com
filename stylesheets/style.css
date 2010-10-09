@@ -3,7 +3,7 @@ body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
-  font-size: 75%;
+  font-size: 87.5%;
 }
 
 /* line 68, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/./_typography.scss */
@@ -78,23 +78,23 @@ p img.right {
 /* line 80, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/./_typography.scss */
 a {
   text-decoration: underline;
-  color: #000099;
+  color: #879bb7;
 }
 /* line 18, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:visited {
-  color: #000066;
+  color: #546884;
 }
 /* line 22, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:focus {
-  color: black;
+  color: #a78f68;
 }
 /* line 26, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:hover {
-  color: black;
+  color: #a78f68;
 }
 /* line 30, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:active {
-  color: #cc0099;
+  color: #ff9bb7;
 }
 
 /* line 81, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/./_typography.scss */
@@ -1026,7 +1026,7 @@ input.span-24, textarea.span-24, select.span-24 {
 
 /* line 8, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_debug.scss */
 .showgrid {
-  background: url('site/images/grid.png?1284411889');
+  background: url('site/images/grid.png');
 }
 
 /* line 4, /Users/greg/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_interaction.scss */
@@ -1189,12 +1189,12 @@ html, body {
   height: 2em;
 }
 
-/* line 10 */
+/* line 11 */
 body {
   background: #1d1d1d;
 }
 
-/* line 13 */
+/* line 14 */
 #container {
   width: 950px;
   margin: 0 auto;
@@ -1203,7 +1203,7 @@ body {
   background: #e5e5e5;
 }
 
-/* line 19 */
+/* line 20 */
 #header {
   display: inline;
   float: left;
@@ -1216,7 +1216,7 @@ body {
 * html #header {
   overflow-x: hidden;
 }
-/* line 24 */
+/* line 25 */
 #header h2 a {
   color: inherit;
   text-decoration: inherit;
@@ -1227,7 +1227,7 @@ body {
   outline: none;
 }
 
-/* line 27 */
+/* line 28 */
 #sidebar {
   display: inline;
   float: left;
@@ -1238,7 +1238,7 @@ body {
 * html #sidebar {
   overflow-x: hidden;
 }
-/* line 30 */
+/* line 31 */
 #sidebar .navigation {
   height: 1%;
   list-style: none;
@@ -1252,7 +1252,11 @@ body {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 37 */
+/* line 38 */
+#sidebar .navigation li.last {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 40 */
 #sidebar .navigation li {
   border: 1px solid #cccccc;
   border-bottom: none;
@@ -1260,17 +1264,23 @@ body {
   margin: 0 0.25em 0 0;
   padding: 0;
 }
-/* line 44 */
+/* line 47 */
 #sidebar .navigation li.current {
-  background: #666666;
-  border: 1px solid #666666;
+  background: #48586e !important;
+  border: 1px solid #eeeeee;
   border-bottom: none;
   color: white;
   cursor: default;
 }
-/* line 51 */
+/* line 54 */
+#sidebar .navigation li:focus, #sidebar .navigation li:hover {
+  background: #a8b3c3;
+  text-decoration: none;
+  color: #555555;
+  outline: none;
+}
+/* line 60 */
 #sidebar .navigation li a {
-  background: #dddddd;
   border: 1px solid #eeeeee;
   border-bottom: none;
   color: #222222;
@@ -1280,26 +1290,18 @@ body {
   padding: 0.15em 0.33em 0.25em 0.33em;
   text-decoration: none;
 }
-/* line 62 */
+/* line 70 */
 #sidebar .navigation li a.current {
-  background: #666666;
   border: 1px solid #666666;
-  border-border: none;
   color: white;
   cursor: default;
 }
-/* line 69 */
+/* line 75 */
 #sidebar .navigation li a.current:focus, #sidebar .navigation li a.current:hover {
   color: #fafafa;
 }
-/* line 72 */
-#sidebar .navigation li a:focus, #sidebar .navigation li a:hover {
-  text-decoration: none;
-  color: #555555;
-  outline: none;
-}
 
-/* line 77 */
+/* line 78 */
 #content {
   display: inline;
   float: left;
@@ -1311,7 +1313,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 80 */
+/* line 81 */
 #footer {
   display: inline;
   float: left;
@@ -1325,19 +1327,19 @@ body {
 }
 
 /* --- Sub Pages --- */
-/* line 86 */
+/* line 87 */
 .fl {
   display: inline;
   float: left;
 }
 
-/* line 88 */
+/* line 89 */
 .clear {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 92 */
+/* line 93 */
 #lessons img {
   display: inline;
   float: right;

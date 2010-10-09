@@ -1,8 +1,9 @@
+@import partials/custom
 @import blueprint
+@import blueprint/colors
 @import compass/layout/sticky-footer
 @import compass/utilities/links/unstyled-link
 @import compass/utilities/lists/bullets
-@import partials/custom
 
 +blueprint
 +sticky-footer(2em, "#container", "#layout_footer", "#footer")
@@ -34,6 +35,8 @@ body
     min-height: auto
     overflow: auto
 
+    li.last
+      border-bottom: 1px solid #ccc
     li
       border: 1px solid #ccc
         bottom: none
@@ -42,14 +45,19 @@ body
       padding: 0
 
       &.current
-        background: #666
-        border: 1px solid #666
+        background: #48586e !important
+        border: 1px solid #eee
           bottom: none
         color: #fff
         cursor: default
 
+      &:focus, &:hover
+        background: #a8b3c3
+        text-decoration: none
+        color: #555
+        outline: none
+
       a
-        background: #ddd
         border: 1px solid #eee
           bottom: none
         color: #222
@@ -60,19 +68,12 @@ body
         text-decoration: none
 
         &.current
-          background: #666
           border: 1px solid #666
-            border: none
           color: #fff
           cursor: default
 
           &:focus, &:hover
             color: #fafafa
-
-        &:focus, &:hover
-          text-decoration: none
-          color: #555
-          outline: none
 
 #content
   +column(18, true)

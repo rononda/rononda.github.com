@@ -1,15 +1,12 @@
 %ul.navigation
-  %li
-    %a{:href => "services.html"} Services
-  %li
-    %a{:href => "bio.html"} Biography
-  %li
-    %a{:href => "memberships.html"} Memberships / Judging
-  %li
-    %a{:href => "lessons.html"} Lessons
-  %li
-    %a{:href => "performances.html"} Weddings / Parties / Performances
-  %li
-    %a{:href => "roots.html"} Canadian / Hungarian Roots
-  %li
-    %a{:href => "contact.html"} Contact
+  - [{:link => "services.html", :label => "Services"},
+      {:link => "bio.html", :label => "Biography"},
+      {:link => "memberships.html", :label => "Memberships / Judging"},
+      {:link => "lessons.html", :label => "Lessons"},
+      {:link => "performances.html", :label => "Weddings / Parties / Performances"},
+      {:link => "roots.html", :label => "Canadian / Hungarian Roots"},
+      {:link => "contact.html", :label => "Contact"}].each_with_index do |lnk, i|
+    - link_class = current_page.include?(lnk[:link]) ? "current" : ""
+    - link_class += " last" if i == 6
+    %li{:class => link_class}
+      %a{:href => lnk[:link], :class => link_class} #{lnk[:label]}
