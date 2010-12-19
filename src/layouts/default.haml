@@ -3,8 +3,18 @@
   %head
     %title Ron Onda | Accordionist
     = stylesheets
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/stylesheets/jquery.lightbox-0.5.css", :media => "screen" }
+    -#%script{ :type => "text/javascript", :src => "https://www.google.com/jsapi?key=ABQIAAAAvp3aROf9l8tIdsVyL4nCBBScwJw9LdcecXMp75Kml-GZOUbT3hRx5raxV4xVrmkAVU-3YEBrPVkjIw" }
+    -#%script{ :type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" }
+    %script{ :type => "text/javascript", :src => "/js/jquery.min.js" }
+    %script{ :type => "text/javascript", :src => "/js/jquery.lightbox-0.5.min.js" }
     :javascript
-      var _gaq = _gaq || [];
+      // lightbox images
+      $(function() {
+        $("a.lightbox").lightBox();
+      });
+
+      /*var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-19003395-1']);
       _gaq.push(['_trackPageview']);
 
@@ -12,7 +22,7 @@
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      })();*/
       
   %body
     #container
